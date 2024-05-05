@@ -31,8 +31,8 @@ const App = () => {
           <Route path="/leaderboard" element={<Leaderboard />} />
           <Route path="/add" element={<CreatePoll />} />
         </Route>
-        <Route path="/not-found" element={<NotFound />} />
-        <Route path="*" element={<Navigate to="/not-found" />} />
+        <Route path="/notfound" element={<NotFound />} />
+        <Route path="*" element={<Navigate to="/notfound" />} />
       </Routes>
     </div>
   );

@@ -31,7 +31,7 @@ const PollClass = ({ label, questions }) => {
           hour: "numeric",
           minute: "numeric",
           hour12: true,
-        })} | ${questionDate.getMonth()}/${questionDate.getDate()}/${questionDate.getFullYear()}`}
+        })} | ${questionDate.getUTCMonth()}/${questionDate.getUTCDate()}/${questionDate.getUTCFullYear()}`}
       ></Poll>
     );
   });
