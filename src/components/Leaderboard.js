@@ -32,9 +32,11 @@ const Leaderboard = () => {
   const users = useSelector((state) => state.users.value);
 
   const userList = Object.values(users).map((user) => ({ ...user }));
-
+  
   userList.sort(
-    (a, b) => Object.keys(b.answers + b.questions).length - Object.keys(a.answers + a.questions).length
+    (a, b) =>
+      (Object.keys(b.answers).length + Object.keys(b.questions).length)
+          - (Object.keys(a.answers).length + Object.keys(a.questions).length)
   );
 
   return (
