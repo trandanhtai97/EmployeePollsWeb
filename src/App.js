@@ -27,9 +27,9 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route element={<AppRoutes />}>
           <Route path="/" element={<Dashboard />} />
-          <Route path="/question/:id" element={<PollDetail />} />
+          <Route path="/questions/:id" element={<PollDetail />} />
           <Route path="/leaderboard" element={<Leaderboard />} />
-          <Route path="/new-poll" element={<CreatePoll />} />
+          <Route path="/add" element={<CreatePoll />} />
         </Route>
         <Route path="/not-found" element={<NotFound />} />
         <Route path="*" element={<Navigate to="/not-found" />} />

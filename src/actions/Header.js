@@ -25,7 +25,7 @@ const Header = ({ index }) => {
         navigate("/leaderboard");
         break;
       case 3:
-        navigate("/new-poll");
+        navigate("/add");
         break;
       case 4:
         navigate("/");

@@ -11,7 +11,7 @@ const Poll = ({ id, user, date }) => {
         <div className="poll-item-top-date">{date}</div>
       </div>
       <div className="poll-item-bottom">
-        <Link className="poll-btn" to={`/question/${id}`}>
+        <Link className="poll-btn" to={`/questions/${id}`}>
           Show
         </Link>
       </div>

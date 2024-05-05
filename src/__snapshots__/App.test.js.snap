@@ -356,3 +356,13 @@ Object {
   "unmount": [Function],
 }
 `;
+
+exports[`App will render the application 1`] = `
+<a
+  class="nav-bar-item nav-bar-item-active"
+  data-testid="home"
+  href="/"
+>
+  Home
+</a>
+`;
